@@ -11,7 +11,7 @@ public class BookTest {
     @Before
     public void setUp() {
         book = new Book("The Fellowship of the Ring", "J.R.R. Tolkein", "Fantasy");
-        library = new Library();
+        library = new Library(300);
     }
 
     @Test
