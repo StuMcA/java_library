@@ -32,12 +32,8 @@ public class Library {
         return capacity;
     }
 
-    public Book removeBook(Book book) {
-        if (checkForBook(book)) {
+    public void removeBook(Book book) {
             books.remove(book);
-            return book;
-        }
-        return null;
     }
 
     public boolean checkForBook(Book book) {

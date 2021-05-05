@@ -14,7 +14,8 @@ public class Borrower {
 
     public void borrowBook(Book book, Library library) {
         if (library.checkForBook(book)) {
-            books.add(library.removeBook(book));
+            books.add(book);
+            library.removeBook(book);
         }
     }
 }
